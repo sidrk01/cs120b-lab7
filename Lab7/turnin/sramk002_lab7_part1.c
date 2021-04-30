@@ -30,7 +30,6 @@ int main(void) {
 	// Value of ADC register is now stored in variable x 
 	unsigned char tmpB = (char)x;
 	unsigned char tmpD = (char)(x >> 8);
-	tmpD = (tmpD & 0x03);
 	
 	PORTB = tmpB;
 	PORTD = tmpD;
